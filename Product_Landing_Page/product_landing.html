@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Product Landing Page - Nicolás Peñaranda</title>
-    <link rel="stylesheet" href="product_landing.css">
-</head>
-
 <body>
-    <div>
-        <header id="header">
-            <img id="header-img" src="./images/original_trombones.png" alt="logo of the company" width="500px">
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#features">Features</a></li>
-                    <li><a class="nav-link" href="#features">How It Works</a></li>
-                    <li><a class="nav-link" href="#features">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div>
-        <form id="form" action="https://www.freecodecamp.org/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email adress" required><br>
-            <input name="submit" id="submit" type="submit" value="Get Started">
-        </form>
-    </div>
-    <section id="features">
-        <div>
-            <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-            title="trombon-video" height="315" width="500px"></iframe>
+    <div id="container">
+  <!-- HEADER / NAV BAR -->
+      <header id="header">
+        <nav id="nav-bar">
+        <div id="navlinks">
+        <img id="header-img" src="https://photos.google.com/photo/AF1QipNzmTgx9daOcFMirucptEnWaNTSUr7vzzKTzexq" alt ="logo" >
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+          <a href="#product" class="nav-link"><i class="fas fa-shopping-bag"></i> Product</a>       
+          <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+          <a href="#join" class="nav-link"><i class="fas fa-envelope"></i> Join</a>
+          </div> 
+        
+          <div id="social">
+          <a class="nav-link-social" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="nav-link-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="nav-link-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          </div></nav>
+      </header>
+  <!--MAIN CONTENT -->   
+      <div id="content">
+        <div id="home">
+          <h1>MEGA Notebooks</h1>
+          <p id="byme">by Megan</p>
         </div>
-    </section>
-</body>
+        <div id="product" class="pages">
+          <h2>PRODUCT</h2>
+          <p class="productcontent">MEGA Notebooks are durable, quality notebooks with over 100 color options to suit your life's color pallette. All notebooks feature a sturdy hard cover, lined and perforated pages, a bookmark, and an elastic securing strap. Don't see a color for you? No problem! Shoot us a message and we can customize the color of your notebook. </p>
+          <img src="https://images.pexels.com/photos/957201/pexels-photo-957201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="notebook image" width="600" id="productimg">
+         
+        <div id="box-container">
+          <div id="box-1" class="flex"><strong>Mini</strong><br>3 x 5 inches <br>$9</div>
+          <div id="box-2" class="flex"><strong>Maxi</strong><br> 5 x 8 inches <br> $13</div>  
+          <div id="box-3" class="flex"><strong>Extra</strong><br> 7 x 10 inches <br> $15</div>      
+        </div>
+        <div id="about" class="pages">
+          <h2>ABOUT</h2>
+          <div id="aboutdiv">
+          <p class="productcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ante urna, ornare et arcu at, eleifend iaculis libero. Vivamus eget viverra sapien, nec venenatis risus. Aenean vitae euismod turpis, in pretium metus. Aenean mattis imperdiet neque, sit amet sollicitudin risus sollicitudin eu. Cras velit mi, commodo sit amet fermentum eu, tempus et lectus. Duis vel dignissim arcu. Sed vel massa fringilla, blandit odio eget, accumsan tellus. Sed vel magna volutpat, accumsan velit quis, consequat odio. Nulla consectetur nibh accumsan nibh lobortis consectetur. Morbi vel mauris pellentesque leo fermentum iaculis ut nec dui. Curabitur sed vulputate eros. Integer quis neque a nisi lacinia dictum. </p>  
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BX43ORwIwzw?rel=0"></iframe>  <!-- video is from https://www.youtube.com/user/Lavendaire -->
+        </div>
+          </div>  
+        <div id="join" class="pages">
+          <h2>JOIN THE ADVENTURE</h2>
+          <p class="productcontent">Coming soon: stationery, journals, and planners! <br> Sign up below to recieve the latest updates and exclusive early access to product launches. </p>
+        <form id="form" method="post" action="mailto:https://www.freecodecamp.com/email-submit">
+          <label class="inputLabels" for="email" id="email-label" >Email:</label>
+        <input class="inputfield" name="email" type="email" placeholder="Enter your email" required  id="email">
+          <input type="submit" value="SUBMIT" id="submit">
+        </form>
+        </div>
+      </div>
+          
+      <footer>
+        <small>Made with &hearts; by <a href ="https://codepen.io/megmulc/" id="footlink" target="_blank">megmulc</a></small>
+      </footer>
+    </div>
+    </div>
+  </body>
 </html>
